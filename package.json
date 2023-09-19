@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cypress": "^13.2.0"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:chrome": "cypress open --browser /run/media/primprum/Data/app-image/chrome-linux/chrome",
+    "cy:run": "cypress run"
+  }
+}
