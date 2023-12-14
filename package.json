@@ -1,10 +1,30 @@
 {
   "dependencies": {
-    "cypress": "^13.2.0"
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.6",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinition": false,
+    "stepDefinitions": "**/stepDef/**/*.js",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "**/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   },
   "scripts": {
     "cy:open": "cypress open",
-    "cy:chrome": "cypress open --browser /run/media/primprum/Data/app-image/chrome-linux/chrome",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run --spec /run/media/primprum/Data/qa-dev/learn-cypress/cypress/e2e/login-sauce.cy.js",
+    "open:chrome": "cypress open --browser /run/media/primprum/Data/app-image/chrome-linux/chrome",
+    "open:firefox": "cypress open --browser /usr/bin/firefox",
+    "chrome": "cypress run --browser /run/media/primprum/Data/app-image/chrome-linux/chrome",
+    "firefox": "cypress run --browser /usr/bin/firefox"
+  },
+  "devDependencies": {
+    "cypress-xpath": "latest",
+    "cypress-iframe": "^1.0.1",
+    "multiple-cucumber-html-reporter": "^3.5.0"
   }
 }
