@@ -11,7 +11,8 @@ Scenario Outline: Calculate BMR with Activity Factors for '<Sex>'
     And selects sex as a '<Sex>'
     And clicks the calculate button
     Then user should see the calculated BMI, BMR, and BMR with Activity Factor value
-    Then system stores BMR as '<SexBMR>'
+    And screenshot is taken
+    And system stores BMR as '<SexBMR>'
 
 Examples:
     | Sex    | SexBMR       | 

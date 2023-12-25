@@ -64,6 +64,11 @@ class BMIAssert {
     cy.writeFile("cypress/fixtures/male.json", { BMRdata });
     cy.writeFile("cypress/fixtures/female.json", { BMRdata });
   }
+
+  generateReport() {
+    cy.wait(2000);
+    cy.screenshot();
+  }
 }
 
 export default new BMIAssert();

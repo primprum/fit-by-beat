@@ -11,10 +11,12 @@ https://fitbybeat.com is a website focused on health and fitness. In this projec
     - [Install the packages](#install-the-packages)
     - [Run the tests](#run-the-tests)
     - [Run all the tests \[headless mode\]](#run-all-the-tests-headless-mode)
+    - [Generate reports](#generate-reports)
   - [Sample Tests \[videos\]](#sample-tests-videos)
     - [Feature \[BMICalculate\]](#feature-bmicalculate)
     - [Feature \[BMICompare\]](#feature-bmicompare)
     - [All Features \[Headless Mode\]](#all-features-headless-mode)
+    - [Test Reports \[With Screenshots\]](#test-reports-with-screenshots)
 
 ## Getting Started
 
@@ -41,6 +43,12 @@ npm run cy:open
 
 ```bash
 npm run cy:run
+```
+
+### Generate reports
+
+```bash
+npm run report
 ```
 
 ## Sample Tests [videos]
@@ -75,3 +83,7 @@ There are 3 scenarios in this test:
 ### All Features [Headless Mode]
 
 [![Test Demo](https://img.youtube.com/vi/0ciyDpYPE1I/maxresdefault.jpg)](https://www.youtube.com/embed/0ciyDpYPE1I)
+
+### Test Reports [With Screenshots]
+
+Github Pages => [https://primprum.github.io/fit-by-beat/](https://primprum.github.io/fit-by-beat/)

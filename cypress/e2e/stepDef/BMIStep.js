@@ -64,3 +64,7 @@ Then("'MaleBMR' should not equal 'FemaleBMR'", () => {
   });
   BMIAssert.BMIclearFixtures();
 });
+
+Then("screenshot is taken", () => {
+  BMIAssert.generateReport();
+});

@@ -2,8 +2,8 @@ const URL = "https://fitbybeat.com/";
 
 class BMIPage {
   visit() {
-    cy.clearCookies();
-    cy.clearLocalStorage();
+    // cy.clearCookies();
+    // cy.clearLocalStorage();
     cy.visit(URL);
   }
 
